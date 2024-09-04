@@ -1,0 +1,154 @@
+/*  About page style*/
+.about__container {
+    grid-area: main1;
+    background-color: #fef8f1;
+    display: grid;
+    padding: 0.25rem;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+  }
+  
+  .about__titleP {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 100px;
+  }
+  
+  .about__mainTitle {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .about__cardContainer {
+    grid-area: main2;
+    background-color: #fef8f1;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+  }
+  
+  .about__card.celine.midouin {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about__card.sarah.hofstetter {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about__card.abbey.klaassen {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card.emily.johnson {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card.lee.maicon {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card.aisha.tan {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card.wei.jie {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card.mei.lin {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    color: gray;
+    font-size: 1rem;
+  }
+  
+  .about__address {
+    grid-area: button;
+    background-color: #E19FAD;
+    text-align: center;
+  }
+  
+  .about__button {
+      padding-top: 20px;
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E19FAD;
+  }
+
+  @media ( min-width:44rem ) and (prefers-reduced-motion: no-preference){
+
+    .about__card.celine.midouin {
+      grid-column: span 3;
+    }
+    .about__card.sarah.hofstetter {
+      grid-column: span 3;
+    }
+    .about__card.abbey.klaassen {
+      grid-column: span 3;
+    }
+    .about__card.emily.johnson {
+      grid-column: span 3;
+    }
+    .about__card.lee.maicon {
+      grid-column: span 3;
+    }
+    .about__card.aisha.tan {
+      grid-column: span 3;
+    }
+    .about__card.wei.jie {
+      grid-column: span 3;
+    }
+    .about__card.mei.lin {
+      grid-column: span 3;
+    }
+    
+  }

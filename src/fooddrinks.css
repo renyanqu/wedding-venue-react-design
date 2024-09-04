@@ -1,0 +1,23 @@
+/*  Food&Drinks page style*/
+.fooddrinks__container {
+    grid-area: main1;
+    background-color: #fef8f1;
+    display: grid;
+    padding: 0.25rem;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+  }
+  
+  .fooddrinks__titleP {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 100px;
+  }
+  
+  .fooddrinks__mainTitle {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  

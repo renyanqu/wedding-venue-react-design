@@ -1,0 +1,125 @@
+/* Wedding Options styles*/
+
+.options__container {
+    grid-area: main1;
+    display: grid;
+    padding: 0.25rem;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+  }
+  
+  .options__subcontainer {
+    grid-column: span 12;
+    background-color: #fef8f1;
+    display: grid;
+    padding: 0.25rem;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+  }
+  
+  .option__titleP {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 100px;
+  }
+  
+  .option__mainTitle {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .index__mainPanel1 {
+    grid-column: span 12;
+    display: flex
+  }
+  .index__mainPanel2 {
+    grid-column: span 12;
+    display: flex
+  }
+  .index__mainPanel3 {
+    grid-column: span 12;
+    display: flex
+  }
+  .index__mainPanel4 {
+    grid-column: span 12;
+    display: flex
+  }
+  
+  .paragraph__image1 {
+    float:left;
+    height: 190px;
+    margin: 2rem;
+  }
+  
+  .paragraph__image2 {
+    float: right;
+    height: 190px;
+    margin: 2rem;
+    
+  }
+  
+  .paragraph__image3 {
+    float:left;
+    height: 190px;
+    margin: 2rem;
+  }
+  
+  .paragraph__image4 {
+    float: right;
+    height: 190px;
+    margin: 2rem;
+  }
+  
+  .Panel1__content {
+      border: 1px solid black;
+      border-bottom: none;
+      border-right: none;
+      border-top: none;
+      padding: 2rem;
+      overflow: hidden;
+  }
+  .Panel2__content {
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .Panel3__content {
+    border: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .Panel4__content {
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  
+  .address {
+    grid-area: main2;
+    background-color: #E19FAD;
+    text-align: center;
+  }
+  
+  .options__buttonContainer {
+      grid-area: button;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E19FAD;
+  }
+  
+  
+  

@@ -1,0 +1,126 @@
+/* Navigation styles */
+nav {
+    position: relative;
+    z-index: 1;
+  }
+  .menu {
+      display: flex;
+      background-color: #FFAE4C;
+      flex-direction: column;
+      justify-content: space-evenly;
+  
+      padding: 0;
+      margin: 0;
+  
+      list-style: none;
+  }
+  
+  .menu__button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+  
+    cursor: pointer;
+  }
+  
+  .menu__item:hover .menu__button,
+  .menu__item:focus-within .menu__button{
+    background-color: #FF8C00;
+    color: #fef7dd;
+  }
+  .menu__item:hover .submenu,
+  .menu__item:focus-within .submenu {
+      
+      rotate: y 0deg;
+  }
+  .submenu {
+    position: absolute;
+    padding: 0;
+    background-color: #FFAE4C;
+    overflow: hidden;
+    list-style-type: none;
+  
+    rotate: y 90deg;
+    transform-origin: right;
+    transition: rotate 0.2s;
+  }
+  
+  .submenu__link {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: #fef7dd;
+  }
+  
+  .submenu__link:hover,
+  .submenu__link:focus {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #FF8C00;
+  }
+
+  @media ( max-width:44rem ) and (prefers-reduced-motion: no-preference){
+    .menu {
+        position: fixed;
+        
+        list-style-type: none;
+  
+        rotate: x 90deg;
+        transform-origin: top;
+        transition: rotate 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+  
+        
+        margin: auto;
+        padding-left: 0;
+        
+    }
+    .submenu{
+      right: 0;
+  } 
+  
+   .menu__hidden {
+        visibility: hidden;
+    }
+    
+    .menu.show__menu {
+        rotate: x 0deg;
+    }
+  
+    .hamburger {
+        position: fixed;
+        height: 2rem;
+        background-color: transparent;
+        border: none;
+        display:block;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+  }
+  
+  
+  @media ( min-width:44rem ) and (prefers-reduced-motion: no-preference){
+    .menu {
+      flex-direction: row;
+    }
+    .menu__item:focus-within .submenu {
+      
+      rotate: x 0deg;
+    }
+  
+    .submenu {
+        rotate: x 90deg;
+        transform-origin: top;
+        transition: rotate 0.1s;
+    }
+    
+    .hamburger {
+      display: none;
+    }
+  }

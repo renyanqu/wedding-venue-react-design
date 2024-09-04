@@ -1,0 +1,150 @@
+/* Home page styles */
+
+.hero {
+    grid-area: main1;
+    display: grid;
+    grid-template-areas: "hero";
+    height: 60vh;
+    max-height: 600px;
+    place-items: center;
+  }
+  
+  .hero__image {
+    grid-area: hero;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    object-fit: cover;
+    height: min(60vh, 600px);
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .hero__text {
+    text-align: center;
+    grid-area: hero;
+    z-index: 1;
+    color: white;
+  }
+  
+  .wedding__options {
+    grid-area: main2;
+    background-color: #fef8f1;
+    display: grid;
+    padding: 0.25rem;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+  }
+  
+  .main__titleP {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 100px;
+  }
+  
+  .home__mainTitle {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .p__undermainTitle {
+    grid-column: span 12;
+    justify-self: center;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .home__mainCard.intimate {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid #E19FAD;
+    border-radius: 1rem;
+    background-color: #E19FAD;
+    }
+    
+    .home__mainCard.marquee {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid #E19FAD;
+    border-radius: 1rem;
+    background-color: #E19FAD;
+    }
+    
+    .home__mainCard.large {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid #E19FAD;
+    border-radius: 1rem;
+    background-color: #E19FAD;
+    }
+  
+    .home__mainCard.winter {
+      grid-column: span 12;
+      display: flex;
+      flex-direction: column;
+      padding: 0.25rem;
+      border: 1px solid #E19FAD;
+      border-radius: 1rem;
+      background-color: #E19FAD;
+      }
+  
+    .home__cardTitle {
+      text-align: center;
+      padding: 0.25rem;
+    }
+    
+    .home__cardImage {
+      margin: auto;
+    }
+    
+    .button__container {
+      grid-area: button;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fef8f1;
+    }
+
+    @media ( max-width:44rem ) and (prefers-reduced-motion: no-preference){
+ 
+
+        .hero__text {
+          position: absolute;
+          top: 20%;
+        }
+      }
+      
+      
+      @media ( min-width:44rem ) and (prefers-reduced-motion: no-preference){
+      
+        .hero__text {
+          position: absolute;
+          top: 30%;
+        }
+      
+        .home__mainCard.intimate {
+          grid-column: span 3;
+          }
+          
+        .home__mainCard.marquee {
+          grid-column: span 3;
+        }
+          
+        .home__mainCard.large {
+          grid-column: span 3;
+        }
+        
+        .home__mainCard.winter {
+          grid-column: span 3;
+        }
+      }

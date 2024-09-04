@@ -1,0 +1,67 @@
+/*  Contact page style*/
+.contact__container {
+    grid-area: main2;
+    grid-column: span 12;
+    display: flex;
+    background-color: #fef8f1;
+    padding: 1rem;
+  }
+  .left__content {
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    padding: 3rem;
+    overflow: hidden;
+    flex: 1;
+  }
+  .form__form {
+    flex: 1;
+    padding: 3rem;
+  }
+  .contact__titleP {
+    grid-column: span 12;
+    justify-self: center;
+    margin-top: 100px;
+  }
+  .contact__p {
+    text-align: center;
+  }
+  .content__title {
+    padding: 2rem;
+  }
+  .required__label {
+    color: red;
+  }
+  .contactbtn {
+    background-color: #E19FAD;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .contactbtn:hover {
+    opacity: 1;
+  }
+  input[type=text],select,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .first-name__error,
+  .last-name__error {
+      color: red;
+  }
+  
+  .register-email__error,
+  .register-confirm__error{
+      color: red;
+  }

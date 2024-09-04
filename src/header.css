@@ -1,0 +1,31 @@
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  
+  .logo {
+    vertical-align: bottom;
+    width:200px;
+    height:130px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: white;
+  }
+  
+  .header__title {
+    display: inline-block;
+  }
+
+  
