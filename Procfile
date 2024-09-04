@@ -1,1 +1,1 @@
-web: npx start
+web: npx serve -s dist
